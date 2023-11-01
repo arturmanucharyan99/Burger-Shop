@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.slider .slider-container {
+  display: grid;
+  grid-template-columns: repeat(2, 100vw);
+  transition: all 1s ease;
+}
+.slider .slider-container img {
+  width: 100%;
+  height: 100%;
+}
+.slider .center {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+}
+.slider .center .deal_text {
+  width: 100%;
+  height: 72px;
+  padding: 25px 50px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.slider .center .deal_text span {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+.slider .center h3 {
+  text-align: center;
+  font-size: 5em;
+  color: white;
+}
+.slider .center h4 {
+  font-family: "Dancing Script", cursive;
+  font-size: 7em;
+  color: yellow;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 912px) {
+  .center {
+    top: 10%;
+  }
+  .deal_text {
+    display: none;
+  }
+  .center h3 {
+    font-size: 2em !important;
+  }
+  .center h4 {
+    font-size: 4em !important;
+  }
+}/*# sourceMappingURL=Header.css.map */

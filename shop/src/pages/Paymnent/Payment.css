@@ -1,0 +1,228 @@
+.payment {
+  margin: 150px 0 150px 0;
+  width: 100%;
+}
+.payment .payment-grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.payment .payment-grid .flip-card {
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+}
+.payment .payment-grid .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 5px 20px 50px #000;
+  border-radius: 50px;
+}
+.payment .payment-grid .flip-card .flip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  border-radius: 50px;
+}
+.payment .payment-grid .flip-card .flip-card-front {
+  width: 100%;
+}
+.payment .payment-grid .flip-card .flip-card-front .card {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+}
+.payment .payment-grid .flip-card .flip-card-front .card .visa {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 173, 0.808);
+  font-size: 30px;
+  font-weight: bold;
+  transform: skewX(-20deg);
+}
+.payment .payment-grid .flip-card .flip-card-front .card-number {
+  margin-top: 30px;
+}
+.payment .payment-grid .flip-card .flip-card-front .card-number p {
+  font-size: 20px;
+  height: 10px;
+  font-weight: bold;
+}
+.payment .payment-grid .flip-card .flip-card-front .card-name-expiration {
+  display: flex;
+  justify-content: space-between !important;
+  padding: 0 50px;
+  margin-top: 70px;
+}
+.payment .payment-grid .flip-card .flip-card-front .card-name-expiration .card-name {
+  display: flex;
+  flex-direction: column;
+}
+.payment .payment-grid .flip-card .flip-card-front .card-name-expiration .card-name .name {
+  font-size: 10px;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+.payment .payment-grid .flip-card .flip-card-front .card-name-expiration .card-name span {
+  font-weight: bold;
+  font-size: 15px;
+}
+.payment .payment-grid .flip-card .flip-card-back {
+  transform: rotateY(180deg);
+  width: 100%;
+}
+.payment .payment-grid .flip-card .flip-card-back .black-line {
+  margin-top: 50px;
+  width: 100%;
+  background-color: black;
+  height: 50px;
+}
+.payment .payment-grid .flip-card .flip-card-back .cvv-card {
+  width: 80%;
+  text-align: right;
+  margin: auto;
+  margin-top: 50px;
+}
+.payment .payment-grid .flip-card .flip-card-back .cvv-card span {
+  color: white;
+}
+.payment .payment-grid .flip-card .flip-card-back .white-line {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  justify-content: flex-end;
+  background-color: white;
+  height: 50px;
+}
+
+.credit-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 25px;
+}
+.credit-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 50px;
+}
+.credit-form form .credit-common {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.credit-form form .credit-common label {
+  margin-bottom: 10px;
+}
+.credit-form form .credit-common input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid grey;
+}
+.credit-form form .credit-common input:hover {
+  border: 1px solid grey;
+}
+.credit-form form .credit-common .label-common {
+  padding-left: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.credit-form form .credit-common select {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid rgba(161, 161, 161, 0.6705882353);
+  margin-top: 5px;
+}
+.credit-form form .year-months-cvs {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+}
+.credit-form form .year-months-cvs .cvv {
+  display: flex;
+  flex-direction: column;
+}
+.credit-form form .year-months-cvs #cvv-id {
+  border-radius: 0;
+  padding: 10px;
+  border-color: rgba(161, 161, 161, 0.6705882353);
+}
+.credit-form form .credit-submit {
+  width: 100%;
+  margin-top: 20px;
+}
+.credit-form form .credit-submit .form-submit {
+  background: linear-gradient(45deg, blue, deeppink);
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+.card-error {
+  margin-top: 5px;
+  color: red;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.credit-card {
+  perspective: 1000px;
+}
+.credit-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.credit-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.credit-card .flip-card-front, .credit-card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.credit-card .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.credit-card .flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 400px) {
+  .credit-form form {
+    width: 300px !important;
+  }
+  .card-name .name {
+    font-size: 13px !important;
+  }
+  .card-name span {
+    font-size: 16px !important;
+  }
+  .year-months-cvs {
+    grid-template-columns: 100% !important;
+  }
+}/*# sourceMappingURL=Payment.css.map */

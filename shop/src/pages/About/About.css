@@ -1,0 +1,43 @@
+.gallery-about {
+  margin-bottom: 150px;
+}
+.gallery-about h2, .gallery-about h3 {
+  text-align: center;
+}
+.gallery-about h2 {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  color: orange;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+.gallery-about h3 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.gallery-about .gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 25px;
+}
+.gallery-about .gallery-images img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+.gallery-about .gallery-images .galllery1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.gallery-about .gallery-images div {
+  overflow: hidden;
+}
+.gallery-about .gallery-images div:hover img {
+  transform: scale(1);
+}/*# sourceMappingURL=About.css.map */

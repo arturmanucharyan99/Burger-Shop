@@ -1,0 +1,111 @@
+.uniq_grid {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: 500px 400px;
+  justify-content: center;
+  grid-gap: 50px;
+}
+.uniq_grid .uniq-img {
+  align-self: center;
+}
+.uniq_grid .uniq-img img {
+  width: 100%;
+  border-radius: 50px;
+}
+.uniq_grid .uniq-info {
+  justify-self: center;
+  align-self: center;
+}
+.uniq_grid .uniq-info h2 {
+  line-height: 70px;
+  text-align: center;
+}
+.uniq_grid .uniq-info p {
+  text-align: center;
+}
+.uniq_grid .uniq-info .info {
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+}
+.uniq_grid .uniq-info .info .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+.uniq_grid .uniq-info .info .buttons span {
+  font-size: 20px;
+}
+.uniq_grid .uniq-info .info .buttons button {
+  width: 50px;
+}
+.uniq_grid .uniq-info .info .buy-price {
+  width: 100px;
+}
+.uniq_grid .uniq-info .info .buy-price button {
+  width: 100%;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 20px;
+}
+.uniq_grid .cart-buy {
+  margin-top: 30px;
+  justify-self: flex-start;
+  width: 100%;
+}
+.uniq_grid .cart-buy button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 30px;
+  background-color: gold;
+  padding: 10px;
+  border: 1px solid gold;
+}
+
+.sameButton {
+  line-height: 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .uniq_grid {
+    grid-template-columns: 1fr !important;
+  }
+  .info {
+    justify-content: space-around !important;
+  }
+  .uniq-img {
+    justify-self: center !important;
+  }
+  .uniq-img img {
+    width: 100%;
+  }
+  .sameButton {
+    font-size: 16px !important;
+  }
+  .cart-buy {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .info {
+    justify-content: space-between !important;
+  }
+  .buttons {
+    width: 100px !important;
+  }
+  .info .buttons {
+    justify-content: flex-start !important;
+  }
+}/*# sourceMappingURL=Uniq.css.map */

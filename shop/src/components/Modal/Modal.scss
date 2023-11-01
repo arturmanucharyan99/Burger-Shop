@@ -1,0 +1,75 @@
+.modal-open {
+    overflow: hidden;
+  }
+
+.gallery-images{
+   div{
+        cursor: pointer;
+   }
+}
+
+
+.lightbox-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:50;
+
+    &::after {
+    opacity: 0.5;
+    background-color: black;
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        left: 0;
+        top: 0;
+    }
+
+    .modal-img{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100 !important;
+        width: 100%;
+        opacity: 1;
+        z-index: 11;
+        img{
+            opacity: 1 !important;
+        }
+        .buttons-img{
+            margin: 25px;
+            cursor: pointer;
+            z-index: 11;
+            font-size: 50px;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .lightbox-gallery img{
+        width: 75vw !important;
+    }
+}
+@media screen and (max-width:500px) {
+    .modal-img{
+        justify-content: center !important;
+    }
+    .lightbox-gallery img{
+        width: 100vw !important;
+        height: 99vw !important;
+    }
+    .buttons-img{
+        display: none;
+    }
+}

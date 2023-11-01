@@ -1,0 +1,32 @@
+.title-burger{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    .page{
+        margin: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        transition: all .5s ease;
+        &:hover{
+            color: orange;
+        }
+    }
+    .currentPage{
+        color: orange;
+    }
+}
+
+.load{
+    text-align: center;
+    color: red;
+    
+}

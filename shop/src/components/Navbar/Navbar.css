@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300&display=swap");
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  transition: all 1s ease;
+  top: 0;
+  z-index: 10;
+}
+.navbar .navbar-logo {
+  margin-left: 10px;
+}
+.navbar #dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 100px;
+  transition: all 1s ease;
+}
+.navbar #dropdown li {
+  list-style: none;
+}
+.navbar #dropdown a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+.navbar .navbar-menu li {
+  margin-right: 10px;
+}
+.navbar .navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+.navbar .navbar-menu li a:hover {
+  color: orange;
+}
+.navbar .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  margin-left: 20px;
+}
+.navbar .navbar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 912px) {
+  .navbar .navbar {
+    max-width: 100%;
+  }
+  .navbar #dropdown {
+    display: block;
+  }
+  .navbar .navbar-menu {
+    display: none;
+  }
+  .navbar .navbar-toggle {
+    display: block;
+    margin-right: 25px;
+  }
+  .navbar .navbar-logo img {
+    width: 100px;
+    height: 50px;
+  }
+  .navbar .navbar-toggle.active span {
+    background-color: orange;
+  }
+  .navbar .navbar-toggle.active ~ .navbar-menu {
+    display: block;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

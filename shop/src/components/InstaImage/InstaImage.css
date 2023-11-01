@@ -1,0 +1,34 @@
+.insta-image {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  margin-bottom: 100px;
+}
+.insta-image .imgInst {
+  display: flex;
+  justify-content: center;
+}
+.insta-image .imgInst img {
+  transition: all 1s ease;
+}
+.insta-image .imgInst:hover > img {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 1200px) {
+  .insta-image {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .insta-image {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 400px) {
+  .imgInst img {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=InstaImage.css.map */

@@ -1,0 +1,54 @@
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.testimonials h4 {
+  text-align: center;
+  color: orange;
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+}
+.testimonials h3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 125px;
+}
+
+.testimonials-comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 250px;
+}
+.testimonials-comments .swiper {
+  width: 100%;
+}
+.testimonials-comments .swiper-wrapper {
+  width: 100%;
+}
+.testimonials-comments .comments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.testimonials-comments .comments img {
+  width: 100px;
+}
+.testimonials-comments .comments p {
+  width: 30%;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials h3 {
+    font-size: 16px !important;
+  }
+  .testimonials h4 {
+    font-size: 16px !important;
+  }
+}/*# sourceMappingURL=Testimonials.css.map */

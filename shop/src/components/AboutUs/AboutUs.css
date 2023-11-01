@@ -1,0 +1,73 @@
+.about-us {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(0, auto);
+  grid-gap: 10px;
+  margin-bottom: 200px;
+}
+.about-us .chefs {
+  position: relative;
+}
+.about-us .chefs .chef {
+  position: absolute;
+  right: 50px;
+  bottom: -50px;
+}
+.about-us .about-text {
+  display: flex;
+  flex-direction: column;
+}
+.about-us .about-text h4 {
+  text-align: left;
+  margin-top: 70px;
+  font-size: 50px;
+  color: rgba(237, 95, 0, 0.84);
+  font-family: "Dancing Script", cursive;
+}
+.about-us .about-text h3 {
+  text-align: left;
+  font-size: 50px;
+  width: 350px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.about-us .about-text p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  width: 450px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-us {
+    grid-template-columns: 100%;
+  }
+  .about-us img {
+    width: 100%;
+  }
+  .chef {
+    width: 50% !important;
+    right: 0 !important;
+  }
+  .about-text h3 {
+    width: 100% !important;
+  }
+  .about-text p {
+    font-size: 16px !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .about-text p {
+    font-size: 16px !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-text h3 {
+    font-size: 16px !important;
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=AboutUs.css.map */
